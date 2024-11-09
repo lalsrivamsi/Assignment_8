@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    // Use the same CSS file for consistency
+    link(rel="stylesheet", href="/assets/css/registration.css")
+    title Login - Hotel Parking System
+  body
+    nav
+      a(href="/")
+        button.HOME HOME
+      a(href="/registration")
+        button.REGISTER REGISTER
+      a(href="/data")
+        button.DATA DATA
+      a(href="/about")
+        button.ABOUT ABOUT
+
+    .container
+      h1 Hotel Parking System - Login
+      .form-container
+        h3 Access Your Account
+        form#login-form(action="/login", method="POST")
+          .form-row
+            label(for="login-username") Username:
+            input.inputBox(type="text", name="username", id="login-username", placeholder="Enter Username", required)
+          .form-row
+            label(for="login-password") Password:
+            input.inputBox(type="password", name="password", id="login-password", placeholder="Enter Password", required)
+          input#login-submit(type="submit", value="Login")
+
+        .redirect-link
+          p Don't have an account? 
+          a(href="/registration") Register here
+
+    // JavaScript file for login form (if needed)
+    script(src="/assets/js/login.js")

@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/assets/css/registration.css")
+    title Register - Hotel Parking System
+  body
+    nav
+      a(href="/")
+        button.HOME HOME
+      a(href="/registration")
+        button.LOGIN LOGIN
+      a(href="/data")
+        button.DATA DATA
+      a(href="/about")
+        button.ABOUT ABOUT
+    .container
+      h1 Hotel Parking System - Register
+      .form-container
+        h3 Create an Account
+        form#registration-form
+          .form-row
+            label(for="reg-username") Username:
+            input.inputBox(type="text", id="reg-username", placeholder="Enter Username", required)
+          .form-row
+            label(for="reg-password") Password:
+            input.inputBox(type="password", id="reg-password", placeholder="Enter Password", required)
+          .form-row
+            label(for="reg-type") Account Type:
+            select.inputBox(id="reg-type")
+              option(value="staff") Staff
+              option(value="customer") Customer
+          input#reg-submit(type="submit", value="Register")
+        .redirect-link
+          p Already have an account? 
+          a(href="/login") Log in here
+    script(src="./assets/js/register.js")

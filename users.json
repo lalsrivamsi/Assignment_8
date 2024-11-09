@@ -1,0 +1,35 @@
+{
+    "staff": [
+      {
+        "username": "staffUser",
+        "password": "staffPassword"
+      }
+    ],
+    "customer": [
+      {
+        "username": "lalsrivamsi",
+        "password": "Lal@2005"
+      },
+      {
+        "username": "vamsikrishna",
+        "password": "Vamsi@2004"
+      },
+      {
+        "username": "saisandeep",
+        "password": "Sandeep@2004"
+      },
+      {
+        "username": "sriram",
+        "password": "Sriram@2004"
+      },
+      {
+        "username": "khaleel",
+        "password": "Khaleel@2004"
+      },
+      {
+        "username": "ajay",
+        "password": "Ajay@2004"
+      }
+    ]
+  }
+  

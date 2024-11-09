@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./assets/css/styles.css")
+    title Hotel Parking System
+  body
+    nav
+      a(href="/")
+        button.HOME HOME
+      a(href="/registration")
+        button.LOGIN LOGIN
+      a(href="/data")
+        button.DATA DATA
+      a(href="/about")
+        button.ABOUT ABOUT
+    h1 Hotel Parking System
+    .form-container
+      h3 Add Details
+      form.cf(id="cf")
+        .form-row
+          label(for="input-name") Name:
+          input.inputBox(type="text", id="input-name", placeholder="Enter Name", required)
+        .form-row
+          label(for="input-mobile") Mobile Number:
+          input.inputBox(type="tel", id="input-mobile", placeholder="Enter Mobile Number", pattern="[0-9]{10}", required)
+        .form-row
+          label(for="input-vname") Vehicle Company and Model:
+          input.inputBox(type="text", id="input-vname", placeholder="Enter Vehicle company and model", required)
+        .form-row
+          label(for="input-vcolor") Vehicle Color:
+          input.inputBox(type="text", id="input-vcolor", placeholder="Enter Vehicle Color", required)
+        .form-row
+          label(for="input-vnumber") Vehicle Number/ID:
+          input.inputBox(type="text", id="input-vnumber", placeholder="Enter Vehicle/ID Number", required)
+        .form-row
+          label(for="input-pslot") Parking Slot Number:
+          input.inputBox(type="text", id="input-pslot", placeholder="Enter Slot Number", required)
+        .form-row
+          label(for="input-floor") Parking Floor:
+          select.inputBox(id="input-floor", required)
+            option(value="-1") Floor -1
+            option(value="-2") Floor -2
+        .form-row
+          label(for="input-entry") Entry Date:
+          input.inputBox(type="date", id="input-entry", required)
+        .form-row
+          label(for="input-entry-time") Entry Time:
+          input.inputBox(type="time", id="input-entry-time", required)
+        .form-row
+          label(for="input-exit") Exit Date:
+          input.inputBox(type="date", id="input-exit", required)
+        .form-row
+          label(for="input-vehicletype") Vehicle Type:
+          select.inputBox(id="input-vehicletype", required)
+            option(value="2-wheeler") 2 Wheeler
+            option(value="3-wheeler") 3 Wheeler
+            option(value="4-wheeler") 4 Wheeler
+        .form-row
+          label(for="input-photo") Upload User Photo:
+          input.inputBox(type="file", id="input-photo", accept="image/*", required)
+        .form-row
+          label(for="input-type") User Type:
+          select.inputBox(id="input-type", required)
+            option(value="staff") Staff
+            option(value="customer") Customer
+        .form-row
+          input.inputBox#input-submit(type="submit", value="Submit")
+    .footer-container
+      footer
+        p Your vehicle, our priority. Safe and secure parking, every time.
+    script(src="./assets/js/script.js")

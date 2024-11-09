@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Parking Data - Hotel Parking System
+    link(rel="stylesheet", href="/assets/css/styles.css")
+  body
+    nav
+      a(href="/")
+        button.HOME HOME
+      a(href="/registration")
+        button.LOGIN LOGIN
+      a(href="/data")
+        button.DATA DATA
+      a(href="/about")
+        button.ABOUT ABOUT
+    .search-bar
+      input(type="text", name="search", id="searchInput", placeholder="Search")
+      p#noMatchMessage(style="display:none") Please enter valid details.
+    table.styled-table
+      thead
+        tr
+          th Photo
+          th Name
+          th Mobile
+          th Vehicle Company and Model
+          th Vehicle Color
+          th Vehicle Number/ID
+          th Parking Slot
+          th Floor
+          th Entry Date
+          th Entry Time
+          th Exit Date
+          th Duration
+          th Vehicle Type
+          th User Type
+          th Actions
+      tbody#datagohere
+        // Data will be dynamically inserted here
+    script(src="/assets/js/data.js") // JavaScript file to handle dynamic data insertion
